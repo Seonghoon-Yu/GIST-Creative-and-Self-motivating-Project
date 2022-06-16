@@ -26,7 +26,7 @@ NeuMF_model_path = model_path + 'NeuMF.pth'
 GMF_model = None
 MLP_model = None
 
-model = torch.load(NeuMF_model_path).to(device)
+model = torch.load(NeuMF_model_path, map_location=torch.device(device)).to(device)
 
 model.cuda()
 model.eval()
