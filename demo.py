@@ -28,7 +28,7 @@ MLP_model = None
 
 model = torch.load(NeuMF_model_path, map_location=torch.device(device)).to(device)
 
-model.cuda()
+model.to(device)
 model.eval()
 
 recommend_list = []
