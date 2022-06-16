@@ -2,9 +2,11 @@ import torch
 from utils import get_recommends, post_process_recommends
 from get_user_id import get_solved_problem, mapping_problems, sample_negative, get_user_id
 
+user_name = input("유저 닉네임을 입력하세요: ")
+print('Get user name: {}'.format(user_name))
 
 ### Get solved problems
-user_name = 'pseudope'
+# user_name = 'pseudope'
 print('Searching solved problems by user: {}'.format(user_name))
 num_neg = 14000
 
