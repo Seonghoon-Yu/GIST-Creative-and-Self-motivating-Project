@@ -8,7 +8,9 @@ import numpy as np
 def get_solved_problem(name='chleodnr3'):
     options = webdriver.ChromeOptions()
     options.add_argument("headless")
-
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    
     # apt install chromium-chromedriver
 
     name = name
