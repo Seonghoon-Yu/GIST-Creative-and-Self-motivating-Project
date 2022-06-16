@@ -5,7 +5,6 @@ from get_user_id import get_solved_problem, mapping_problems, sample_negative, g
 
 ### Get solved problems
 user_name = 'pseudope'
-user_name = 'bumandu'
 print('Searching solved problems by user: {}'.format(user_name))
 num_neg = 14000
 
